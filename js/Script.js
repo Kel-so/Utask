@@ -12,6 +12,19 @@ close.addEventListener('click', () => {
   modal_container.classList.remove('show')
 })
 
+var openModalButton = document.getElementById("open-modal");
+var closeModalButton = document.getElementById("close-modal");
+var modal = document.getElementById("info-modal");
+
+openModalButton.addEventListener("click", function() {
+  modal.style.display = "flex";
+});
+
+closeModalButton.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+
 // To-do aplication
 
 const form = document.querySelector('form');
@@ -51,5 +64,26 @@ completedList.addEventListener('click', (event) => {
 
     event.target.remove();
   }
+});
+
+var slides = document.querySelectorAll(".slide");
+var prevBtn = document.querySelector(".prev-btn");
+var nextBtn = document.querySelector(".next-btn");
+var currentSlide = 0;
+
+function showSlide(n) {
+  slides[currentSlide].classList.remove("active");
+  slides[n].classList.add("active");
+  currentSlide = n;
+}
+
+prevBtn.addEventListener("click", function() {
+  var prevSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(prevSlide);
+});
+
+nextBtn.addEventListener("click", function() {
+  var nextSlide = (currentSlide + 1) % slides.length;
+  showSlide(nextSlide);
 });
 

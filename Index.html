@@ -42,6 +42,19 @@
                         acredite em você porque Deus já te deu tudo o que você precisa para você vencer.</p>
             </div>
         </div>
+
+        <div class="dayphrasemobile" id="open-modal">
+            <div class="dayphrasemobileball">
+                <div class="dayinnerball">
+                <span class="material-icons light">
+                tips_and_updates
+                </span>
+                </div>
+            </div>
+            <p>Frase do dia</p>
+            
+        </div>
+    
         <div class="tasks">
             <div class="tasksdivisor">
                 <div class="TaskHeader">
@@ -53,6 +66,7 @@
                     </button>
                 </div>
                 <div class="taskcontent">
+                    <ul id="todo-list"></ul>
                 </div>
             </div>
             <div class="tasksdivisor">
@@ -61,7 +75,7 @@
                 </div>
 
                 <div class="taskcontent">
-
+                    <ul id="ongoing-list"> </ul>
                 </div>
             </div>
             <div class="tasksdivisor">
@@ -70,10 +84,64 @@
                 </div>
 
                 <div class="taskcontent">
-
+                    <ul id="completed-list"> </ul>
                 </div>
             </div>
         </div>
+
+        <div class="slider">
+            <button class="prev-btn">Anterior</button>
+            <div class="slide active">
+              <div class="task" id="task1">
+                <div class="tasksdivisor">
+                    <div class="TaskHeader">
+                        <p>A fazer</p>
+                        <button class="addtask" id="open">
+                            <span class="material-icons blue">
+                                add
+                                </span>
+                        </button>
+                    </div>
+                    <div class="taskcontent">
+                        <ul id="todo-list"></ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="task" id="task2">
+                <div class="tasksdivisor">
+                    <div class="TaskHeader">
+                        <p>Em andamento</p>
+                    </div>
+    
+                    <div class="taskcontent">
+                        <ul id="ongoing-list"> </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="task" id="task3">
+                <div class="tasksdivisor">
+                    <div class="TaskHeader">
+                        <p>Concluído</p>
+                    </div>
+    
+                    <div class="taskcontent">
+                        <ul id="completed-list"> </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="next-btn">Próximo</button>
+          </div>
+          
+          <div class="controls">
+            
+           
+          </div>
+
     </main>
     <div class="modal_container" id="modal_container" >
         <div class= "modal">
@@ -107,6 +175,36 @@
         
       
       </div>
+      
+      
+      <div id="info-modal" class="modalinfo">
+        <div class="modal-content">
+            <div class="firstline">
+                <div class="modaltitle">
+                    <div class="dayphrasemobileball">
+                        <div class="dayinnerball">
+                            <span class="material-icons light">
+                                tips_and_updates
+                            </span>
+                     </div>
+                </div>
+                <p>Frase do dia</p>
+            </div>
+            <button class="addtask" id="close-modal">
+                <span class="material-icons blue">
+                    close
+                    </span>
+            </button>
+            </div>
+            <p class="textomodal">
+                Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você quer conquistar o mundo, acredite em você porque Deus já te deu tudo o que você precisa para você vencer.
+            </p>
+        </div>
+        
+      </div>
+
+      
+
     <footer>
         <h1 class="footer-text"> &copy; Processo de Trainee<a href="https://unect.com.br/"> Unect</a> 2023.1</h1>
         <div>

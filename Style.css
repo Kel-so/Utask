@@ -64,6 +64,7 @@ main{
 .checkbox{
     opacity: 0;
     position: absolute;
+    width: 70px;
 }
 .bold{
     font-family: 'Poppins';
@@ -85,6 +86,65 @@ main{
 
     display: flex;
     justify-content: space-between;
+}
+
+.dayphrasemobile {
+    width: 100%;
+    height: 60px;
+    background-color: #ffd569;
+    display: none;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.dayphrasemobile p {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fafafa;
+    text-decoration: none;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 20px;
+}
+
+.dayphrasemobileball {
+    width: 44px;
+    height: 44px;
+    left: 66px;
+    top: 118px;
+
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+background: #FFFCEE;
+}
+
+.dayinnerball {
+    width: 34px;
+    height: 34px;
+    left: 71px;
+    top: 123px;
+
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFF5C0;
+}
+
+
+
+li{
+background-color: #114FA7;
+height: 100px;
+padding: 10px;
 }
 
 .dayphrase .ball {
@@ -283,7 +343,7 @@ input {
     background-color: #ffffff;
     padding: 33px 50px;
     width: 474px;
-    height: 421px; /* Could be more or less, depending on screen size */
+    height: 421px; 
     }
 
     .modal_header {
@@ -456,3 +516,144 @@ body.dark {
 footer.dark {
     background: #3d3d3d;
 }
+  
+  @media only screen and (max-width: 767px) {
+    /* Estilos para dispositivos móveis */
+    .info-area {
+      display: none;
+    }
+
+    .modal {
+        width: 315px;
+        padding: 25px;
+    }
+
+    input {
+        width: 255px;
+    }
+
+    #project-description {
+        width: 255px;
+    }
+
+    .salvar {
+        width: 251px;
+    }
+    
+}
+  
+    .modalinfo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semitransparente */
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+
+        position: absolute;
+        width: 315px;
+        height: 218px;
+
+        padding: 20px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .modaltitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+/* identical to box height */
+        letter-spacing: -0.017em;
+
+        color: #000000;
+    }
+
+    .firstline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .textomodal {
+        padding-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #141414;
+    }
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: none;
+        flex-direction: row;
+      }
+      
+      .slide {
+        width: 287px;
+        display: none;
+      }
+      
+      .active {
+        display: block;
+      }
+      
+      .task {
+        padding: 20px;
+        background-color: #eaeaea;
+      }
+      
+      .controls {
+        margin-top: 20px;
+      }
+      
+      .prev-btn,
+      .next-btn {
+        width: 30px;
+        background-color: #ccc;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      .prev-btn {
+        margin-right: 10px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .dayphrase {
+          display: none;
+        }
+        
+        .dayphrasemobile {
+            display:flex;
+        }
+    
+        .slider {
+            display: flex;
+        }
+    
+        .tasks{
+            display: none;
+        }
+      }
